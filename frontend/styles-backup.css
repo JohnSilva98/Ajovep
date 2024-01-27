@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+a{
+    text-decoration: none;
+}
+/* NAVBAR CSS */
+#nav-container{
+    background-color: #37474f;
+    height: 100px;
+}
+
+#navbar ul{  
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+#navbar h1{
+    color: #cfcfcf;
+    letter-spacing: 3px;
+}
+
+#navbar a{
+    color: #cfcfcf;
+    font-size: 20px;
+    font-weight: 800;
+    transition: .8s;
+}
+
+#navbar a:hover{
+    color: #910ee9;
+    text-decoration: underline;
+}
+
+/* TITLES CSS */
+
+#title-container .title{
+    width: fit-content;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+/* carousel css */
+
+.carousel {
+    width: 80%; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    overflow: hidden; /* Oculta as partes excedentes dos slides */
+  
+   
+  }
+  
+  .slides {
+    display: flex;
+    gap: 1rem; /*adiciona um espaço entre cada imagem*/
+    margin-top: 2rem;
+
+  }
+  
+  .slide {
+    flex: 0 0 33.333%; /* Garante que cada slide ocupe 1/3 do espaço */
+    max-width: 33.333%; /* Evita que as imagens estiquem além do necessário */
+  }
+
+
+  /* BUTTON CSS */
+  
+   button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  } 
+
+  .btn {
+    background-color: #8a0fdb; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 50%; /* Transforma o botão em um círculo */
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Adiciona um cursor de apontar */
+    outline: none; /* Remove a borda de foco padrão */
+    margin: 0 2.5rem; /* Adiciona margem entre os botões */
+    transition: .5s ease-out;
+  }
+
+  .btn:hover{
+      background-color: #fff; /* Cor de fundo */
+      color: #8a0fdb; /* Cor do texto */
+  }
+
+
+  
+  #prevBtn {
+    left: 0;
+  }
+  
+  #nextBtn {
+    right: 0;
+  }
+  

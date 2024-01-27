@@ -42,3 +42,79 @@ a{
     color: #910ee9;
     text-decoration: underline;
 }
+
+/* TITLES CSS */
+
+#title-container .title{
+    width: fit-content;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+
+
+/* carousel css */
+
+.carousel {
+  margin: 0 auto;
+  width: 80%; /* Ajuste conforme necessário */
+  height: 500px;
+ 
+  position: relative;
+}
+  
+.slides {
+  height: 500px;
+  display: flex;
+  overflow: hidden; /* Oculta qualquer conteúdo que exceda as dimensões do contêiner */
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 100%; /* Cada slide ocupará 100% da largura do contêiner */
+  position: relative;
+  overflow: hidden; /* Oculta as partes excedentes dos slides */
+}
+
+.slide img {
+  width: calc(100% / 3); /* Cada imagem ocupará 1/3 da largura do slide */
+}
+.slides input{
+  display: none;
+}
+  
+  /* radio buttons manual navigation styles */
+  .manual-navigation{
+    position: absolute;
+    width: 80%;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn{
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover{
+    background-color: #fafafa;
+  }
+/* Ajuste para as posições dos slides */
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+margin-left: -100%;
+}
+#radio3:checked ~ .first {
+margin-left: -200%;
+}
