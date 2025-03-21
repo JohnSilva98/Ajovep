@@ -163,3 +163,19 @@ a {
 #footer p {
   color: white;
 }
+
+/* css for buy page  */
+
+#content {
+  padding: 1.5rem;
+}
+
+#content img {
+  position: absolute;
+  left: 8rem;
+  top: 6rem;
+}
+#titulo-produto {
+  font-size: 1rem;
+  position: relative;
+}
