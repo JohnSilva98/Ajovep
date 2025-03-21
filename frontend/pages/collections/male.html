@@ -11,9 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/frontend/styles.css" />
     <!-- scripts -->
-    <script src="scripts/scripts.js"></script>
+    <script defer src="/frontend/scripts/scripts.js"></script>
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -25,16 +25,14 @@
   </head>
   <body>
     <div id="nav-container">
-      <a href="index.html"><h1>AJVP Store</h1></a>
+      <a href="/frontend/index.html"><h1>AJVP Store</h1></a>
       <nav id="navbar">
         <ul id="nav-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/frontend/index.html">Home</a></li>
           <li class="dropdown">
             <a href="#">Coleçoes</a>
             <ul class="dropdown-menu">
-              <li class="colletion">
-                <a href="pages/collections/male.html">Masculino</a>
-              </li>
+              <li class="colletion"><a href="#">Masculino</a></li>
               <li class="colletion"><a href="#">Feminino</a></li>
             </ul>
           </li>
@@ -48,7 +46,7 @@
     <div id="container">
       <main id="main-container">
         <div id="title-container">
-          <h2 class="title">Conheça nossos lançamentos:</h2>
+          <h2 class="title">Coleção masculina</h2>
         </div>
         <!-- carrosel de imagens -->
         <div class="carousel">
@@ -61,25 +59,25 @@
             <div class="slide first">
               <img
                 src="https://encurtador.com.br/KGdGD"
-                onclick="buyproduct(1)"
+                onclick="buyProduct(1)"
               />
               <img
                 src="https://encurtador.com.br/vjAP8"
-                onclick="buyproduct(2)"
+                onclick="buyProduct(2)"
               />
               <img
                 src="https://encurtador.com.br/YWinX"
-                onclick="buyproduct(3)"
+                onclick="buyProduct(3)"
               />
             </div>
             <div class="slide">
-              <img src="https://encurtador.com.br/A2WHL" />
-              <img src="https://encurtador.com.br/DZOZB" />
+              <img src="https://encurtador.com.br/YWinX" />
+              <img src="https://encurtador.com.br/KGdGD" />
               <img src="https://encurtador.com.br/vjAP8" />
             </div>
             <div class="slide">
+              <img src="https://encurtador.com.br/vjAP8" />
               <img src="https://encurtador.com.br/KGdGD" />
-              <img src="https://encurtador.com.br/DZOZB" />
               <img src="https://encurtador.com.br/YWinX" />
             </div>
             <!-- end carrosel de imagens -->
